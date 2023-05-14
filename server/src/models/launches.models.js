@@ -30,8 +30,8 @@ function addNewLaunch(launch) {
     })
   );
 }
-function abortLaunchById(launchid) {
-  const aborted = launches.get(launchid);
+function abortLaunchById(launchId) {
+  const aborted = launches.get(launchId);
   aborted.upcoming = false;
   aborted.success = false;
   return aborted;

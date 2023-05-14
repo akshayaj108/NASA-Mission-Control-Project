@@ -25,6 +25,7 @@ function httpAddNewLaunch(req, res) {
 }
 function httpAbortLaunch(req, res) {
   const launchId = Number(req.params.id);
+  console.log(launchId);
   if (!existWithLaunchId(launchId)) {
     return res.status(404).json({
       err: "Launch Not Found",
